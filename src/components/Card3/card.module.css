@@ -1,0 +1,65 @@
+.profile__card {
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    color: white;
+    width: 300px;
+    height: 400px;
+    margin: 20px 0;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.jotaro__img {
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    transition: all linear 0.25s;
+    filter: grayscale(100%);
+    box-shadow:
+    0 0 0.3rem #04a6ec,
+    0 0 0.3rem #04a6ec,
+    0 0 0.3rem #04a6ec,
+    inset 0 0 0 #04a6ec;
+}
+
+.profile__name {
+    position: absolute;
+    left: 40%;
+    bottom: 17%;
+    font-size: 30px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    font-weight: bolder;
+    transition: all linear 0.25s;
+}
+
+.profile__user {
+    position: absolute;
+    bottom: 12%;
+    left: 40%;
+    font-size: 13px;
+    transition: all linear 0.25s;
+}
+
+.profile__social {
+    position: absolute;
+    bottom: 3%;
+    right: 10%;
+    transition: all linear 0.25s;
+}
+
+.profile__card:hover img {
+    filter: none;
+}
+
+.profile__card:hover .profile__name {
+    bottom: 80px;
+}
+
+.profile__card:hover .profile__user {
+    bottom: 60px;
+}
+
+.profile__card:hover .profile__social {
+    right: 40px;
+}

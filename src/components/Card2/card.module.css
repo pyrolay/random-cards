@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+    font-family: octopus;
+    src: url('../../assets/octopusbold.otf');
+}
+
+.container {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    width: 600px;
+    margin: 50px;
+    border-radius: 8px;
+    box-shadow:
+    0 0 0.3rem #88bb59,
+    0 0 0.3rem #88bb59,
+    0 0 0.3rem #88bb59,
+    inset 0 0 0 #88bb59;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/CardTwo/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.information {
+    display: flex;
+    color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.information img {
+    width: 200px;
+    display: flex;
+    align-self: center;
+    margin: 12px 16px;
+}
+
+.information__container {
+    margin: 24px 16px 0 0;
+}
+
+.card__title {
+    font-weight: bold;
+    font-family: octopus;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.card__tag {
+    display: flex;
+    justify-content: space-between;
+    color: #C5D8A4;
+}
+
+.card__description {
+    margin: 16px 0;
+}
+
+.card__button {
+    display: flex;
+}
+
+.card__button button {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.card__button button span {
+    margin-left: 4px;
+}
+
+.button__read__now {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.button__read__now, .button__readlist {
+    padding: 2px 10px;
+    border-radius: 2px;
+    transition: 0.2s;
+}
+
+.button__read__now:hover, .button__readlist:hover {
+    background: rgba(150, 150, 150, 0.5);
+}

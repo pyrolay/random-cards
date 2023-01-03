@@ -1,0 +1,117 @@
+/* #9768aa */
+
+/* 
+    box-shadow:
+    0 0 0.3rem #9768aa,
+    0 0 0.3rem #9768aa,
+    0 0 0.3rem #9768aa,
+    inset 0 0 0 #9768aa;
+*/
+
+.card {
+    width: 460px;
+    height: 370px;
+    padding: 40px;
+    padding-right: 250px;
+    margin: 20px;
+    margin-right: 220px;
+    position: relative;
+	text-align: right;
+    font-family: 'Raleway', sans-serif;
+    background-color: plum;
+    box-shadow:
+    0 0 0.3rem purple,
+    0 0 0.3rem purple,
+    0 0 0.3rem purple,
+    inset 0 0 0 purple;
+}
+
+.music__container {
+	position: absolute;
+	top: 50%;
+    right: 48%;
+    transform: translateY(-50%);
+}
+
+.music__content {
+    margin-top: 24px;
+}
+
+.name {
+	margin-bottom: 24px;
+    font-size: 28px;
+	font-weight: normal;
+}
+
+.title {
+	margin-bottom: 24px;
+    font-weight: 200;
+	font-size: 24px;
+}
+
+.song {
+	margin-bottom: 24px;
+    font-size: 18px;
+	font-weight: 200;
+}
+
+.music__controls {
+    margin-top: 20px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.music__button {
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.music__button:hover {
+    color: purple;
+}
+
+.album {
+    position: relative;
+	width: 315px;
+	height: 315px;
+    margin-top: -10px;
+	margin-left: 250px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.65);
+}
+
+.album__cover {
+	position: absolute;
+	height: 315px;
+	width: 315px;
+    background: #fff url(../../assets/CardFour/Josuoku3.jpg) center / cover no-repeat;
+    z-index: 1;
+}
+
+.album__vinyl {
+    position: absolute;
+	height: 300px;
+    width: 300px;
+    left: 52%;
+	top: 5px;
+    animation: spin 5s linear infinite;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/83141/vinyl.png'), url(../../assets/CardFour/Josuoku3.jpg);
+	background-position: center, center;
+	background-size: cover, 40% auto;
+	background-repeat: no-repeat;
+    border-radius: 100%;
+    box-shadow:
+    0 0 0.3rem purple,
+    0 0 0.3rem purple,
+    0 0 0.3rem purple,
+    inset 0 0 1rem purple;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
